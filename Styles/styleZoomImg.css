@@ -1,0 +1,53 @@
+@media only screen and (max-width:600px) {
+    #mobile {
+        width: 450px;
+    }
+}
+
+div:hover {
+    background-color: aliceblue;
+}
+
+div {
+    background-color: rgba(234, 239, 239, 0.445);
+    height: 30px;
+    width: 100%;
+    border-radius: 180px;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    height: 23px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+img {
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding: 20px;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.747);
+    color: rgba(0, 0, 0, 0.718);
+    border-color: rgb(255, 255, 255);
+    float: right;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgba(255, 0, 0, 0.718);
+    border-color: rgb(255, 255, 255);
+
+}

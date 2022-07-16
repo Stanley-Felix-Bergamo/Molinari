@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="icon" href="../Assets/Ico/Moli.png">
+    <title>Molinari Soldagens</title>
+    <style>
+        body {
+            position: relative;
+        }
+
+        .zap {
+            padding: 1%;
+            position: fixed;
+            width: 120px;
+        }
+
+        .Mapa {
+            width: 100%;
+            height: 230px;
+        }
+
+        .Spann {
+            float: left;
+        }
+
+        .message {
+            width: 100%;
+            height: 300px;
+        }
+
+        .btn {
+            width: 30%;
+            height: 40px;
+            float: right;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+            color: white;
+        }
+
+        .btn:active {
+            background-color: #002e02;
+            color: white;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html">
+            <img src="../Assets/Logo/molinari__1_-removebg-preview.png" alt="Molinar Soldagens" width="200dp">
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+        </label>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./Sobre.html">Sobre</a></li>
+            <li><a href="./Portfólio.html">Portfólio</a></li>
+            <li><a href="./Contato.html">Contato</a></li>
+        </ul>
+    </header>
+    <br><br><br><br>
+
+    <br><br><br><br><br>
+
+    <a href="https://wa.me/5516981090940">
+        <img class="zap" src="../Assets/Ico/zap.png" alt="">
+    </a>
+    <div class="Container">
+        <div class="ContainerTexto">
+            <h1 class="Subtitulo">Contato</h1>
+            <hr><br><br>
+            <p class="Texto">
+            </p>
+            <div>
+                <form action="">
+                    <label for="fname" class="Spann">Nome</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Digite Seu Nome">
+
+                    <label for="lname" class="Spann">Email</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Digite Seu Email">
+
+                    <label>
+                        <span class="Spann">Mensagem</span>
+                        <textarea class="message" name="feedback" id="feedback"></textarea>
+                        <input type="button" class="btn" value="Enviar" />
+                    </label>
+                </form>
+            </div>
+            <br><br><br><br><br><br><br><br><br>
+            <h1 class="Subtitulo">Localização</h1>
+            <hr><br>
+            <p><strong>Av: Mogiana nº 663 - Vila Mariana - Ribeirão Preto/SP</strong></p>
+            <br>
+            <iframe class="Mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.136900397158!2d-47.7876250852665!3d-21.146949485934513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bf4491c590c9%3A0x8eb72e8a3e7b14a5!2sMolinari%20Soldagens!5e0!3m2!1spt-BR!2sbr!4v1653512672839!5m2!1spt-BR!2sbr"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br><br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+
+
+    <br><br><br><br><br><br>
+    <footer>
+        <h3>Copyright © 2022 Molinari Soldagens - Todos os direitos reservados</h3>
+        <h6>CNPJ: 28.745.434/0001-30 &nbsp &nbsp &nbsp &nbsp Endereço:Av Mogiana, 663, Vila Mariana, Ribeirao
+            Preto,
+            SP,
+            CEP
+            14075-270,
+            Brasil
+        </h6>
+
+    </footer>
+</body>
+
+
+</html>
