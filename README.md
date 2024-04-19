@@ -2,7 +2,7 @@
 
 
 <div align="center" >
-    <img width="725rem" src="https://servidor-estaticos-ten.vercel.app/port.png" alt="imagem">
+    <img width="725rem" src="" alt="imagem">
 </div> 
 <br>
 
