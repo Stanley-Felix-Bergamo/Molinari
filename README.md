@@ -6,8 +6,6 @@
 </div> 
 <br>
 
-> Para ver o projeto rodando você pode acessar este [Link](https://portfolio-omega-beryl-31.vercel.app/).
-
 <h2>💻 Tecnologias utilizadas</h2>
 <div style="display: inline_block">
 
