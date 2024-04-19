@@ -1,10 +1,4 @@
-# Portfólio <img align="right" src="https://img.shields.io/static/v1?label=STATUS&message=Está %20Pronto &color=green&style=for-the-badge"/>
-
-
-<div align="center" >
-    <img width="725rem" src="" alt="imagem">
-</div> 
-<br>
+<img align="right" src="https://img.shields.io/static/v1?label=STATUS&message=Está %20Pronto &color=green&style=for-the-badge"/>
 
 <h2>💻 Tecnologias utilizadas</h2>
 <div style="display: inline_block">
