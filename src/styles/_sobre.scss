@@ -1,0 +1,29 @@
+@use "./variables";
+
+.sobre {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+
+   
+    p {
+        margin-top: 1rem;
+        text-align: justify;
+    }
+
+    img {
+        width: 100%;
+        height: 40rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .sobre {
+        img {
+            height: initial;
+            margin-top: 5rem;
+        }
+        display: initial;
+    }
+}

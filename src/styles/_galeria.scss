@@ -1,0 +1,49 @@
+@use "./variables";
+
+.galeria {
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    p {
+        color: variables.$colorGreen;
+    }
+    img {
+        width: 100%;
+        max-width: 30rem;
+        height: 30rem;
+    }
+    button {
+        margin-top: 0.9rem;
+        width: 100%;
+        padding: 0.7rem;
+        border-radius: 0.7rem;
+        background-color: variables.$colorBlue;
+        cursor: pointer;
+        border: none;
+    }
+
+    button:hover {
+        background-color: variables.$colorBlue-2;
+    }
+
+    &__imagens {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 4rem;
+        gap: 1rem;
+    }
+
+    @media (max-width: 769px) {
+        .galeria {
+            &__imagens {
+                margin-top: 2rem;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}
+
+.ocultar {
+    opacity: 0;
+    display: none;
+}

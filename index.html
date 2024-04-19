@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./dist/imagem/icone.png">
+    <title>Molinari Soldagens</title>
+</head>
+
+<body>
+    <header>
+        <section class="top-nav">
+            <div class="container container--flex">
+                <div>
+                    <img src="./dist/imagem/logo.png" alt="logo">
+                </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='top-nav__menu-button-container' for="menu-toggle">
+                    <div class='top-nav__menu-button'></div>
+                </label>
+                <ul class="top-nav__menu">
+                    <li class="top-nav__menu__item"><a class="link" href="#">Ínicio</a></li>
+                    </li>
+                    <li class="top-nav__menu__item"><a class="link" href="#sobre">Sobre</a></li>
+                    <li class="top-nav__menu__item"><a class="link" href="#portifolio">Portfólio</a></li>
+                    <li class="top-nav__menu__item"><a class="link"  target="_blank" href="https://wa.me/16981090940">Contato</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <section class="hero">
+        <div class="hero__contato">
+            <h1>Soldagens Soluções em Aço Inox</h1>
+            <a href="https://wa.me/16981090940" target="_blank">
+                <button type="button">Entrar em contato <ion-icon name="logo-whatsapp"></ion-icon></button>
+            </a>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <section class="sobre" id="sobre">
+            
+            <div>
+                <img src="./dist/imagem/empresa2.png" alt="Molinari">
+            </div>
+            <div class="sobre__texto">
+                <h2>Sobre nós</h2>   
+                <p>A Molinari Soldagens chega ao mercado de trabalho com o conceito
+                    de qualidade de produto e sofisticação, com uma ampla linha de produtos confeccionados em aço inoxidável,  visa atender aos setores de construção civil, restaurantes e lanchonetes, laboratórios, industrias farmacêuticas e residencias de alto padrão.
+                    Nossos produtos são fabricados seguindo projetos e normas regulamentadoras.
+                </p>
+            </div>
+        </section>
+
+        <section class="portifolio" id="portifolio">
+            <h2>Nossos Produtos</h2>
+            <p>A Molinari Soldagens, conta com uma equipe de colaboradores altamente treinada e capacitada para produzirem produtos com qualidade e segurança.
+                Nossos produtos são fabricados de acordo com a necessidade de cada cliente, fabricados sob medida e seguindo projetos.
+                Produzimos em nosso portfólio de aço inox:
+                Corrimão e guarda corpo para escadas, fachadas, varandas.
+                Mesas com prateleiras lisas ou com paneleiros para padarias, açougues e  restaurantes.
+                Bancadas com cubas e pias.
+                Prateleiras com mão francesa para fixação em parede.
+                Coifas e dutos para cozinhas industriais.</p>
+        </section>
+
+        <section class="aco">
+            <h2>Aço Inox</h2>
+                <div class="aco__imagens">
+                    <div>
+                        <img src="./dist/imagem/img12.jpg" alt="imagem">
+                        <h4>Estilo</h4>
+                        <p>Guarda corpo em aço Inox AISI 304, perfil 40x40 nas colunas e 40x20 no superior, acabamento polido, dotados de vidro temperado de 10mm.</p>
+                    </div>
+                    <div>
+                        <img src="./dist/imagem/img13.jpg" alt="imagem">
+                        <h4>Segurança</h4>
+                        <p>Seguro, moderno, o aço inox tem alta durabilidade, resistente a corrosão, pode ser aplicado em ambientes externos e internos,isento de manutenção e pinturas periódicas.</p>
+                    </div>
+                    <div>
+                        <img src="./dist/imagem/img16.jpg" alt="imagem">
+                        <h4>Valor</h4>
+                        <p>O aço inox alem de combinar segurança e beleza, agrega valor e sofisticação ao ambiente.</p>
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="galeria" id="galeria">
+            <h2>Galeria de imagens</h2>
+                <div class="galeria__imagens">
+                    <img src="./dist/imagem/img1.png" alt="imagem">
+                    <img src="./dist/imagem/img2.png" alt="imagem">
+                    <img src="./dist/imagem/img3.png" alt="imagem">
+                    <img src="./dist/imagem/img4.png" alt="imagem">
+                    <img src="./dist/imagem/img5.png" alt="imagem">
+                    <img src="./dist/imagem/img6.png" alt="imagem">
+                    <img src="./dist/imagem/img7.png" alt="imagem">
+                    <img src="./dist/imagem/img8.png" alt="imagem">
+                </div>
+                <div class="galeria__imagens ocultar" id="galeria__imagens">
+                    <img src="./dist/imagem/img9.png" alt="imagem9">
+                    <img src="./dist/imagem/img10.png" alt="imagem10">
+                    <img src="./dist/imagem/img11.jpg" alt="imagem11">
+                    <img src="./dist/imagem/img18.png" alt="imagem12">
+                    <img src="./dist/imagem/img13.jpg" alt="imagem13">
+                    <img src="./dist/imagem/img14.png" alt="imagem14">
+                    <img src="./dist/imagem/img15.png" alt="imagem15">
+                    <img src="./dist/imagem/img16.jpg" alt="imagem16">
+                </div>
+                <button onclick="Abrir()" class="galeriaBtn">Ver mais</button>
+        </section>
+    </div>
+
+
+
+
+    <footer>
+        <a href="https://www.instagram.com/molinarisoldagens/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://www.facebook.com/molinari.soldagens?ref=bookmarks" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="mailto:molinarierm@gmail.com">
+            <ion-icon name="logo-google"></ion-icon>
+        </a>
+           <a href="https://wa.me/16981090940" target="_blank">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+        <p>© Molinari Soldagens</p>
+        <p>Rua Santos, 1310 - Vila Carvalho - Ribeirão Preto/SP</p>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./dist/scripts/main-min.js"></script>
+</body>
+
+
+</html>

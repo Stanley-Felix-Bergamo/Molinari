@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "meu portolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stanley-Felix-Bergamo/Portfolio.git"
+  },
+  "author": "Stanley-Felix-Bergamo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stanley-Felix-Bergamo/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Stanley-Felix-Bergamo/Portfolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.58.3"
+  },
+  "dependencies": {
+    "gulp-minify": "^3.1.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

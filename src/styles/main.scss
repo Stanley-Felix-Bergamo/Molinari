@@ -1,0 +1,200 @@
+@use "./variables";
+@use "./top-nav";
+@use "./hero";
+@use "./galeria";
+@use "./sobre";
+@use "./portifolio";
+@use "./aco";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    color: variables.$colorWhite;
+}
+
+:root {
+    font-size: 62.5%;
+}
+body,
+button {
+    background-color: variables.$colorDark;
+    font-size: 1.6rem;
+}
+
+header {
+    padding-top: 40px;
+    @media (max-width: 768px) {
+        padding-top: 20px;
+    }
+}
+
+ion-icon {
+    color: variables.$colorGreen;
+    font-size: 3.2rem;
+    transition: 1s;
+}
+
+footer {
+    text-align: center;
+    background-color: variables.$colorGray-3;
+    padding: 2rem;
+    p,
+    span {
+        background-color: variables.$colorGray-3;
+    }
+    span {
+        color: variables.$colorGreen;
+    }
+    @media (max-width: 800px) {
+        font-size: 1.2rem;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 60%;
+    }
+    @media (max-width: 468px) {
+        max-width: 90%;
+    }
+
+    &--flex {
+        display: flex;
+    }
+}
+.container-2 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 60%;
+    }
+    @media (max-width: 468px) {
+        max-width: 90%;
+    }
+}
+
+.link {
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: variables.$colorBlue;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+.button {
+    font-size: 14px;
+    font-weight: 500;
+    width: 143px;
+    height: 42px;
+    align-items: center;
+    padding: 12px 27px;
+    justify-content: center;
+    color: variables.$colorDark;
+    background-color: variables.$colorGreen;
+
+    &:hover {
+        background-color: lighten(variables.$colorGreen, 10%);
+    }
+
+    &--secondary {
+        background-color: variables.$colorDark;
+        color: variables.$colorWhite;
+        border: 1px solid variables.$colorGray-2;
+        padding: 12px 10px;
+
+        &:hover {
+            background-color: lighten(variables.$colorGray-2, 10%);
+        }
+    }
+}
+
+.caixa {
+    width: 100%;
+    padding: 32px;
+    background-color: variables.$colorGray-3;
+    border: solid 1px variables.$colorGray-2;
+    text-align: center;
+    align-items: center;
+    width: 115px;
+    height: 105px;
+
+    @media (max-width: 768px) {
+        padding: 21px;
+        width: 90px;
+        height: 70px;
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: variables.$colorGreen;
+    color: variables.$colorGray-3;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: variables.$colorGreen transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+footer {
+    ion-icon {
+        color: variables.$colorBlue;
+        font-size: 3.2rem;
+    }
+}

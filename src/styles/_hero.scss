@@ -1,0 +1,72 @@
+@use "./variables";
+.hero {
+    z-index: 0;
+    margin-top: 5rem;
+    background-image: url("../../dist/imagem/hero.jpg");
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+
+    &__contato {
+        position: absolute;
+        margin-top: 10rem;
+        left: 12rem;
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        button {
+            background-color: rgb(22, 83, 53);
+            border: none;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            cursor: pointer;
+            padding: 0.6rem;
+            margin-top: 2rem;
+            gap: 2rem;
+            border-radius: 0.2rem;
+            transition: background 0.9s;
+            &:hover {
+                background-color: rgb(35, 123, 79);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 20rem;
+
+        &__contato {
+            margin-top: 2rem;
+            left: 4rem;
+
+            h1 {
+                font-size: 3.5rem;
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .hero {
+        height: 14rem;
+
+        &__contato {
+            margin-top: 2rem;
+            left: 2rem;
+
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            button {
+                padding: 0.1rem;
+                margin-top: 0.2rem;
+            }
+        }
+    }
+}

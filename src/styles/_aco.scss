@@ -1,0 +1,30 @@
+.aco {
+    margin-top: 5rem;
+
+    img {
+        width: 100%;
+        max-width: 30rem;
+        height: 30rem;
+    }
+    h4 {
+        font-weight: bold;
+    }
+
+    &__imagens {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    @media (max-width: 769px) {
+        &__imagens {
+            display: initial;
+            grid-template-columns: repeat(1, 1fr);
+
+            img {
+                margin-top: 3rem;
+            }
+        }
+    }
+}
